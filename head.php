@@ -16,7 +16,7 @@ if (!isset($_SESSION['username'])) {
 <body>
 
 <div class="sidebar">
-	<h3><i class="fa fa fa-shopping-cart"></i> RomeChocolate</h3>
+	<h3><i class="fa fa fa-shopping-cart"></i> Rafi Mandiri</h3>
 	<ul><?php
 			if ($_SESSION['status']==1) {
 				?>
@@ -25,15 +25,8 @@ if (!isset($_SESSION['username'])) {
 						<span><?php echo $_SESSION['username']; ?></span>
 					</li>
 					<li><a id="dash" href="home.php"><i class="fa fa-home"></i> Dashboard</a></li>
-					<li><a id="barang" href="barang.php"><i class="fa fa-bars"></i> Chocolate</a></li>
-					<li><a id="kategori" href="kategori.php"><i class="fa fa-tags"></i> Kategori Chocolate</a></li>
-					<li><a id="users" href="users.php"><i class="fa fa-users"></i> Kasir</a></li>
-					<li><a id="laporan" href="laporan.php"><i class="fa fa-book"></i> Laporan</a></li>
-				<?php
-			}else{
-				?>
-					<li><a id="transaksi" href="transaksi.php"><i class="fa fa-money"></i> Transaksi</a></li>
-				
+					<li><a id="barang" href="barang.php"><i class="fa fa-bars"></i> Barang</a></li>
+					<li><a id="laporan" href="data_barang.php"><i class="fa fa-book"></i> Data Barang</a></li>
 				<?php
 			}
 		?>

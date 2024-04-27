@@ -6,7 +6,7 @@ class penjualan
 	public $con;
 	function __construct()
 	{
-		$this->con=new mysqli("localhost","root","","imk");
+		$this->con=new mysqli("localhost","root","","rafimandiri");
 	}
 	function __destruct()
 	{
@@ -121,9 +121,9 @@ class penjualan
 	}
 	function tampil_barang($keyword){
 		if ($keyword=="null") {
-			$query=$this->con->query("select barang.id_barang,barang.nama_barang,barang.stok,barang.harga_beli,barang.harga_jual,barang.date_added,kategori.nama_kategori from barang inner join kategori on kategori.id_kategori=barang.id_kategori");
+			$query=$this->con->query("select barang.id,barang.nama_barang,barang.stok,barang.harga_beli,barang.harga_jual,barang.date_added,kategori.nama_kategori from barang inner join kategori on kategori.id_kategori=barang.id_kategori");
 		}else{
-			$query=$this->con->query("select barang.id_barang,barang.nama_barang,barang.stok,barang.harga_beli,barang.harga_jual,barang.date_added,kategori.nama_kategori from barang inner join kategori on kategori.id_kategori=barang.id_kategori where nama_barang like '%$keyword%'");
+			$query=$this->con->query("select barang.id,barang.nama_barang,barang.stok,barang.harga_beli,barang.harga_jual,barang.date_added,kategori.nama_kategori from barang inner join kategori on kategori.id_kategori=barang.id_kategori where nama_barang like '%$keyword%'");
 		}
 		if ($query->num_rows > 0) {
 			$no=1;

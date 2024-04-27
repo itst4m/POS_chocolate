@@ -8,7 +8,7 @@ if (isset($_SESSION['username'])) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login | RomeChocolate</title>
+	<title>Login | Rafi Mandiri</title>
 	<style type="text/css">
 	@font-face{
 	font-family: titillium;
@@ -64,14 +64,13 @@ if (isset($_SESSION['username'])) {
 		<div class="login">
 		
 		<div class="padding">
-			<h3>Login RomeChocolate</h3>
+			<h3>Login Rafi Mandiri</h3>
 		<form id="loginapp">
 			<input type="text" name="username" placeholder="Username">
 			<input type="password" name="pass" placeholder="Password">
 			
 			<select name="loginas" required="required">
 				<option value="1">Owner</option>
-				<option value="2">Kasir</option>
 			</select>
 			<button type="submit"><i class="fa fa-sign-in"></i> Login</button>
 			<div class="both"></div>

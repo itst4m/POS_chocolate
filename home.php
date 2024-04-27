@@ -29,14 +29,14 @@
 		<div class="box">
 			<div class="padding">
 				<i class="fa fa-bars"></i>
-				Data Chocolate
+				Barang
 				<span class="status blued"><?= $root->show_jumlah_barang() ?></span>
 			</div>
 		</div>
 		<div class="box">
 			<div class="padding">
 				<i class="fa fa-book"></i>
-				Laporan
+				Data Barang
 				<span class="status blued"><?= $root->show_jumlah_trans2() ?></span>
 			</div>
 		</div>

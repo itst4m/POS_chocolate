@@ -17,7 +17,7 @@
 				<div class="left">
 					<form action="handler.php?action=tambah_kategori" method="post">
 						<input type="text" name="nama_kategori" placeholder="Nama Kategori..." style="margin-right: 10px;border-right: 1px solid #ccc;border-radius: 3px;">
-						<button style="background: #41b3f9;color: #fff;border-radius: 3px;border-color: #41b3f9;border:1px solid #41b3f9">Tambahkan</button>
+						<button style="background: #41b3f9;color: #fff;border-radius: 3px;border-color: #41b3f9;border:1px solid #41b3f9">Tambahin</button>
 					</form>
 				</div>
 				<div class="both"></div>

@@ -52,9 +52,9 @@
 						}
 					</script>
 					<select class="leftin1" onchange="gotocat(this)">
-						<option value="">Filter kategori</option>
+						<option value="">Filter Pencarian</option>
 						<?php
-							$data=$root->con->query("select * from kategori");
+							$data=$root->con->query("select * from barang");
 							while ($f=$data->fetch_assoc()) {
 								?>
 									<option <?php if (isset($_GET['id_cat'])) { if ($_GET['id_cat'] == $f['id_kategori']) { echo "selected"; } } ?> value="<?= $f['id_kategori'] ?>"><?= $f['nama_kategori'] ?></option>
@@ -74,13 +74,15 @@
 				<thead>
 				<tr>
 					<th width="10px">#</th>
+					<th width="100px">No PO</th>
+					<th width="100px">Tanggal PO</th>
+					<th width="120px">Pembuat PO</th>
 					<th style="cursor: pointer;">Nama Barang <i class="fa fa-sort"></i></th>
-					<th style="cursor: pointer;" width="100px">Kategori <i class="fa fa-sort"></i></th>
-					<th>Stok</th>
-					<th width="120px">Harga Beli</th>
-					<th width="120px">Harga Jual</th>
-					<th width="150px">Tanggal Ditambahkan</th>
-					<th width="60px">Aksi</th>
+					<th width="150px">Harga Barang</th>
+					<th width="70px">Jumlah</th>
+					<th width="150px">Total</th>
+					<th width="100px">Payment</th>
+					<th width="100px">Keterangan</th>
 				</tr>
 			</thead>
 			<tbody>
